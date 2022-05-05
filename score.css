@@ -1,0 +1,69 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0;
+  max-width: 500px;
+  margin: auto;
+}
+
+img {
+  padding: 2% 15%;
+  margin: auto;
+  width: 70%;
+}
+
+.scoreboard {
+  display: flex;
+  padding: 0px 16px;
+  justify-content: space-evenly;
+}
+
+.game {
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  width: 90%;
+  background: white;
+  box-shadow: 4px 10px 16px rgba(0, 0, 0, 0.12);
+}
+
+.scores {
+  margin: auto;
+  user-select: none;
+}
+
+.buttons {
+  display: flex;
+}
+
+button {
+  flex: 1;
+  padding: 16px 8px;
+  border: 0px;
+  margin: 1px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+button:first-child {
+  background: lightgreen;
+}
+button {
+  background: lightblue;
+}
+button:last-child {
+  background: rgb(285, 201, 206);
+}
+
+#note{
+  display: none;
+  margin: auto;
+  text-align: center;
+  user-select: none;
+}
