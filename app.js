@@ -33,7 +33,9 @@ scoreBoard.addEventListener("change", () => {
                 secondButton.disabled = true;
                 secondButton.style.cursor = "not-allowed";
                 scoreBoard.disabled = true; 
-                note.style.display = "block";
+                resetButton.disabled = false;
+                resetButton.style.cursor = "pointer";
+                note.style.visibility = "visible";
                 return;
             }
 
@@ -57,7 +59,9 @@ scoreBoard.addEventListener("change", () => {
                 secondButton.disabled = true;
                 secondButton.style.cursor = "not-allowed";
                 scoreBoard.disabled = true;
-                note.style.display = "block";
+                resetButton.disabled = false;
+                resetButton.style.cursor = "pointer";
+                note.style.visibility = "visible";
                 return;
             }
 
@@ -80,5 +84,7 @@ scoreBoard.addEventListener("change", () => {
             firstPlayerScore.style.color = "black";
             secondPlayerScore.style.color = "black";
             scoreBoard.removeAttribute("disabled");
-            note.style.display = "none";
+            resetButton.disabled = true;
+            resetButton.style.cursor = "not-allowed";
+            note.style.visibility = "visible";
         });
